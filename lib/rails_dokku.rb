@@ -1,5 +1,6 @@
-require "rails_dokku/version"
+require 'rails_dokku/version'
 
 module RailsDokku
-  # Your code goes here...
+  puts Rails
+  require 'rails_dokku/railtie' if defined?(Rails)
 end
